@@ -1,12 +1,9 @@
 /*Global*/
-body{
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E0E0E0;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-family:'Montserrat', sans-serif;
-
-=======
->>>>>>> feature/benefits
 }
 /*Navbar*/
 nav {
@@ -386,5 +383,73 @@ nav {
 }
 
 /*Planes*/
+.page-title {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+
+
+.membership {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.membership-card {
+    width: 310px;
+    padding-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.membership-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.membership-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.membership-card p {
+    color: #666;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2; 
+    color: #000000;
+    border: 1px solid #ddd;
+    border-color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cecece; 
+}
 
 /*Nostros*/
