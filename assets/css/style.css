@@ -22,8 +22,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    padding: 50px;
+    width: 100%; /* Utilizar el ancho completo del contenedor */
+    /* Otros estilos permanecen iguales */
+    padding: 50px 20px; /* Reducir el espacio de relleno */
 }
 
 .func-title{
@@ -37,11 +38,12 @@
 
 
 .process-func{
-    height: 80%;
+    height: auto; /* Altura automática para ajustarse al contenido */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
     align-items: center;
-    padding:100px
+    padding: 20px; /* Reducir el espacio de relleno */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en filas */
 }
 
 
@@ -53,23 +55,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px; /* Margen entre las tarjetas */
+    flex: 1; /* Permitir que las tarjetas se expandan igualmente */
+    max-width: 300px; /* Establecer un ancho máximo para las tarjetas */
 }
 
 .card-image{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 180px;
-    height: 240px;
+    width: 140px; /* Reducir el ancho de la tarjeta */
+    height: 200px; /* Reducir la altura de la tarjeta */
     background-color: #C1B4B4;
     border-radius: 10px;
-    margin:50px
 }
 
 
 .card-image img{
-    width: 140px;
+    max-width: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
+    max-height: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
 }
 
 .card .card-info{
@@ -79,9 +83,10 @@
     width: 180px;
 }
 
-@media (max-width:986px){
+@media (max-width:1048px){
     #functionality{
-        height: 800px;
+        height: auto; /* Cambiado para ajustar contenido */
+     
         padding: 20px;
     }
 
@@ -89,12 +94,14 @@
         font-size: 24px;
         margin-top: 20px;
     }
-    .process-func{
-        height: 90%;
+    .process-func {
+        height: auto; /* Cambiado para ajustar contenido */
         width: 100%;
         padding: 20px;
         margin-top: 20px;
         flex-direction: column;
+        align-items: center; /* Alinear elementos horizontalmente */
+        justify-content: flex-start; /* Alinear elementos verticalmente arriba */
     }
 
     .conector{
