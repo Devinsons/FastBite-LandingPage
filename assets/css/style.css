@@ -1,5 +1,8 @@
 /*Global*/
-
+body{
+    margin: 0;
+    padding: 0;
+}
 /*Navbar*/
 
 /*Hero*/
@@ -7,9 +10,67 @@
 /*funcionamiento*/
 
 /*beneficios*/
+/* Estilos generales */
+
+
+/* Estilos de la sección de beneficios */
+.benefits-section {
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #DF7E6F;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefits-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.column-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    color: #FAEEEE;
+}
+
+.benefits-list li {
+    margin-bottom: 15px;
+}
+.material-symbols-outlined{
+    font-size: 50px;
+    color: #7fe5b4;
+    margin-right: 10px;
+
+
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+    }
+
+    .benefits-column {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+}
 
 /*Planes*/
 
 /*Nostros*/
-
-/*Footer*/
