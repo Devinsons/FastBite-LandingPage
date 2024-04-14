@@ -453,3 +453,40 @@ nav {
 }
 
 /*Nostros*/
+.nosotros{
+    padding: 3rem 0;
+}
+.startup{
+    text-align: center;
+    color: black;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.startup img{
+    width: 15%;
+    border-radius: 50%;
+}
+.members{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem,7fr));
+    grid-gap: 1rem;
+}
+.member{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.member img{
+    width: 50%;
+    border-radius: 50%;
+}
+.member h3{
+    color: black;
+    align-items: center;
+}
+/*Footer*/
