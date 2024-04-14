@@ -1,6 +1,103 @@
 /*Global*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
 
+}
 /*Navbar*/
+nav {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 80px; /* Añadir relleno izquierdo y derecho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Agregar posición relativa */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: calc(100% - 160px); /* Ancho total menos el espacio del relleno */
+  }
+  
+  nav ul li {
+    flex-grow: 1;
+    text-align: center; /* Centrar el texto */
+  }
+  
+  nav img {
+    height: 40px; /* Ajusta la altura según tu logo */
+    margin-right: 40px; /* Espacio entre el logo y el primer elemento */
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 0 5px;
+    background-color: #f6f3f3;
+  }
+  
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #000000;
+    /*quiero una transicion*/
+    transition: 0.3s;
+  }
+  
+ /* Estilos para el menú desplegable */
+.menu-icon {
+    display: none; /* Ocultar el icono del menú en pantallas grandes */
+}
+
+@media screen and (max-width: 768px) {  
+  nav{
+    margin-bottom: 0;
+    
+  }
+
+    .nav-links {
+        display: none; /* Ocultar la lista de navegación en pantallas pequeñas */
+        flex-direction: column;
+        background-color: #e36f62;
+        position: absolute;
+        top: 50px; /* Ajusta según la altura de la barra de navegación */
+        left: 0;
+        width: 100%;
+
+        height: calc(100vh - 50px); /* Ocupa toda la altura disponible menos la altura de la barra de navegación */
+        overflow-y: auto; /* Añadir desplazamiento vertical si la lista es muy larga */
+        padding-top: 10px; /* Añadir espacio superior */
+        padding-bottom: 10px; /* Añadir espacio inferior */
+    }
+
+    .nav-links li {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    }
+  
+    .menu-icon {
+        display: block; /* Mostrar el icono del menú en pantallas pequeñas */
+        cursor: pointer;
+    }
+
+    .nav-links.show {
+
+        display: flex; /* Mostrar la lista de navegación cuando la clase 'show' está presente */
+    }
+    
+}
 
 /*Hero*/
 
