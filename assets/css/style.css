@@ -196,7 +196,130 @@ nav {
     }
 }
 /*funcionamiento*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos de la sección Functionality*/
+
+#functionality{
+    background-color: #E0E0E0;
+    font-family: "Montserrat",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Utilizar el ancho completo del contenedor */
+    /* Otros estilos permanecen iguales */
+    padding: 50px 20px; /* Reducir el espacio de relleno */
+}
+
+.func-title{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.process-func{
+    height: auto; /* Altura automática para ajustarse al contenido */
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    align-items: center;
+    padding: 20px; /* Reducir el espacio de relleno */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en filas */
+}
+
+
+.conector img{
+    width: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /* Margen entre las tarjetas */
+    flex: 1; /* Permitir que las tarjetas se expandan igualmente */
+    max-width: 300px; /* Establecer un ancho máximo para las tarjetas */
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px; /* Reducir el ancho de la tarjeta */
+    height: 200px; /* Reducir la altura de la tarjeta */
+    background-color: #C1B4B4;
+    border-radius: 10px;
+}
+
+
+.card-image img{
+    max-width: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
+    max-height: 100%; /* Ajustar la imagen al tamaño de la tarjeta */
+}
+
+.card .card-info{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    width: 180px;
+}
+
+@media (max-width:1048px){
+    #functionality{
+        height: auto; /* Cambiado para ajustar contenido */
+     
+        padding: 20px;
+    }
+
+    .func-title{
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .process-func {
+        height: auto; /* Cambiado para ajustar contenido */
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center; /* Alinear elementos horizontalmente */
+        justify-content: flex-start; /* Alinear elementos verticalmente arriba */
+    }
+
+    .conector{
+        display: none;
+    }
+
+    .card{
+        padding-bottom: 10px;
+        flex-direction: row;
+    }
+
+    .card-image{
+        width: 100px;
+        height: 120px;
+        margin:10px
+    }
+
+    .card-image img{
+        width: 85px;
+    }
+
+    .card .card-info{
+        font-size: 12px;
+        width: 100px;
+    }
+
+}
 /*beneficios*/
 
 /*Planes*/
